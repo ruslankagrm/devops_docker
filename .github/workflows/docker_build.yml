@@ -4,5 +4,5 @@
     Docker-build:
       runs-on: ubuntu-20.04
       steps:
-        - uses: actions/checkout
+        - uses: actions/checkout@v2
         - run: docker build -t nginx_server_test . --file Dockerfile
